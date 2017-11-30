@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:scaleX="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiving information ..."
+            android:id="@+id/printM"
+            android:textSize="16dp"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+
+
+        <TextView
+            android:text="Receiving information ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/royalblue"
+            android:id="@+id/allJpy"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:translationX="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alert line ￥0"
+            android:textSize="16dp"
+            android:id="@+id/alerttext"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:translationX="5dp"/>
+
+        <TextView
+            android:text="Receiving information ..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/HaveN"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:translationX="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiving information ..."
+            android:textSize="16dp"
+            android:id="@+id/printN"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:translationX="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiving information ..."
+            android:textSize="16dp"
+            android:id="@+id/HaveM"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+
+        <GridLayout
+            android:layout_row="3"
+            android:layout_column="0"
+            android:columnCount="1"
+            android:layout_columnSpan="2"
+            android:rowCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationY="15dp">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:id="@+id/nemchart"/>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:id="@+id/monachart"/>
+        </GridLayout>
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
