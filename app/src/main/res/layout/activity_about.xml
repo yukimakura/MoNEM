@@ -4,6 +4,7 @@
     android:id="@+id/activity_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/aliceblue"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -11,27 +12,27 @@
     tools:context="jp.yukimakura.monem.about">
 
     <TextView
-        android:text="MoNEMはMONAとNEMの残高を\n日本円換算してくれるアプリです。\nまた、同時に2つのZaifのチャートを見ることができるのも特徴です。\n\n\nNEMはアドレスを入力するだけで残高が取得されますが、MONAの方はまだ未実装です。\nその為、暫定的に金額を手入力することで対応させています。"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/textView" />
+        android:layout_alignParentTop="true"
+        android:text="MoNEMはMONAとNEMの残高を\n日本円換算してくれるアプリです。\nまた、同時に2つのZaifのチャートを見ることができるのも特徴です。\n\n\nNEMはアドレスを入力するだけで残高が取得されますが、MONAの方はまだ未実装です。\nその為、暫定的に金額を手入力することで対応させています。" />
 
     <TextView
-        android:text="Created by yukimakura\n\n\nDonate Me !!(NEM)  \nNCDRFEB7VNH2WDBEW6SV276CEF4UEZLCJSD3YVD4"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView2"
         android:onClick="copyaddress"
-        android:layout_alignParentBottom="true" />
+        android:text="Created by yukimakura\n\n\nDonate Me !!(NEM)  \nNCDRFEB7VNH2WDBEW6SV276CEF4UEZLCJSD3YVD4" />
 
     <TextView
+        android:id="@+id/changelog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/changelog"
-        android:textSize="13dp"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:textSize="13dp" />
 </RelativeLayout>
